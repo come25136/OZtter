@@ -1,0 +1,58 @@
+body {
+    overflow: hidden;
+}
+
+.tweet {
+    position: absolute;
+    height: 84px;
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    -moz-box-shadow: 0 2px 3px 0 #ddd;
+    -webkit-box-shadow: 0 2px 3px 0 #ddd;
+    animation: Tweet_Animation 0.06s linear 0s forwards;
+}
+
+.icon {
+    margin: 10px;
+    width: 0px;
+    height: 64px;
+    overflow: hidden;
+    animation: Icon_Animation 0.06s linear 0s forwards;
+}
+
+.value {
+    margin: 6px;
+    width: 0px;
+    height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: Value_Animation 0.06s linear 0s forwards;
+}
+
+@keyframes Tweet_Animation {
+    from {
+        margin-left: 150px;
+    }
+    to {
+        margin-right: 0px;
+        width: 300px;
+    }
+}
+
+@keyframes Icon_Animation {
+    to {
+        width: 64px;
+    }
+}
+
+@keyframes Value_Animation {
+    from {
+        margin-left: 28%;
+    }
+    to {
+        margin-left: 74px;
+        width: 69%;
+    }
+}

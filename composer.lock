@@ -1,0 +1,178 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1a271abe3369d997a80629d5bc301e71",
+    "content-hash": "0f678a53d3d04e384f8894dec91d71fd",
+    "packages": [
+        {
+            "name": "mpyw/co",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpyw/co.git",
+                "reference": "e61114ca578dbe78476cc6768300001a5b9eb0fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpyw/co/zipball/e61114ca578dbe78476cc6768300001a5b9eb0fb",
+                "reference": "e61114ca578dbe78476cc6768300001a5b9eb0fb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-reflection": "*",
+                "lib-curl": ">=7.20.0",
+                "php": ">=5.5.0",
+                "react/promise": "^2.4"
+            },
+            "require-dev": {
+                "codeception/aspect-mock": "^2.0",
+                "codeception/codeception": "^2.2",
+                "codeception/specify": "*",
+                "mpyw/privator": "^2.0",
+                "php": ">=7.0.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mpyw\\Co\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mpyw",
+                    "email": "ryosuke_i_628@yahoo.co.jp"
+                }
+            ],
+            "description": "Asynchronous cURL executor simply based on resource and Generator",
+            "keywords": [
+                "asynchronous",
+                "curl",
+                "generator",
+                "http",
+                "parallel"
+            ],
+            "time": "2016-08-28 14:02:56"
+        },
+        {
+            "name": "mpyw/cowitter",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpyw/cowitter.git",
+                "reference": "0b491f6371b4e4769ea8de7b563997e7354c8860"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpyw/cowitter/zipball/0b491f6371b4e4769ea8de7b563997e7354c8860",
+                "reference": "0b491f6371b4e4769ea8de7b563997e7354c8860",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "lib-curl": ">=7.20.0",
+                "mpyw/co": "^1.5",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "codeception/aspect-mock": "^2.0",
+                "codeception/codeception": "^2.2",
+                "codeception/specify": "*",
+                "mpyw/privator": "^2.0",
+                "php": ">=7.0.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mpyw\\Cowitter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mpyw",
+                    "email": "ryosuke_i_628@yahoo.co.jp"
+                }
+            ],
+            "description": "Asynchronous Twitter client compatible with mpyw/co Generator-based flows.",
+            "keywords": [
+                "api",
+                "async",
+                "asynchronous",
+                "image",
+                "oauth",
+                "paralell",
+                "streaming",
+                "twitter",
+                "upload",
+                "video"
+            ],
+            "time": "2016-09-13 03:11:10"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "8025426794f1944de806618671d4fa476dc7626f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/8025426794f1944de806618671d4fa476dc7626f",
+                "reference": "8025426794f1944de806618671d4fa476dc7626f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "time": "2016-05-03 17:50:52"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
