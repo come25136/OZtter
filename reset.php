@@ -2,8 +2,8 @@
 $_SESSION = array();
 session_destroy();
 
-if (isset($_COOKIE["PHPSESSID"])) {
-    setcookie("PHPSESSID", '', time() - 1800, '/');
+if (isset($_COOKIE["ps"])) {
+    setcookie("ps", '', time() - 1800, '/');
 }
 
 header('Location: index.php');
