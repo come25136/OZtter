@@ -1,0 +1,40 @@
+#progressbar {
+    display: none;
+    border: 4px solid #ff00a2;
+    background-color: #ff00a2;
+    margin-left: 7px;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+}
+
+#progress {
+    left: 10px;
+    width: 100%;
+}
+
+#progress-t {
+    position: absolute;
+    left: 11px;
+    top: 3px;
+    width: 100%;
+    height: 22px;
+    background-color: #ffffff;
+    animation-fill-mode: both;
+}
+
+#auth {
+    margin: 16px;
+    text-align: center;
+    color: #ff00a2;
+    font-family: "ＭＳ Ｐゴシック";
+    font-size: 50px;
+}
+
+#welcome {
+    display: none;
+    margin: 10px;
+    text-align: center;
+    font-family: "ＭＳ Ｐゴシック";
+    font-size: 50px;
+}
