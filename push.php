@@ -18,37 +18,39 @@ header("X-Accel-Buffering: no");
 
 ob_flush();
 flush();
-
+/*
 try {
-    push("info.png", "connecting");
+    push('Info', 'info.png', 'connecting');
 
     $client = new Client([$Twitter['ck'], $Twitter['cs'], $_GET['at'], $_GET['ats']]);
     $client->streaming('user', function ($status) {
         if (isset($status->text)) {
-            push(str_replace("normal", "bigger", $status->user->profile_image_url_https), $status->text);
+            push('Tweet', str_replace('normal', 'bigger', $status->user->profile_image_url_https), $status->text, $status->id_str);
         }
     });
 } catch (HttpException $e) {
-    $_SESSION = array();
-    session_destroy();
+    if ($e->getCode() == 89) {
+        $_SESSION = array();
+        session_destroy();
+    }
 
-    push(null, $e->getCode());
+    push('Error', null, $e->getCode());
 }
-
-function push($icon, $value)
+*/
+function push($event, $icon, $value, $id = null)
 {
-    echo "event: message\n";
-    echo "data: " . json_encode(["Icon_url" => $icon, "Value" => $value], JSON_UNESCAPED_UNICODE) . "\n\n";
+    echo "event: $event\n";
+    echo "data: " . json_encode(['icon_url' => $icon, 'value' => $value, 'id' => $id], JSON_UNESCAPED_UNICODE) . "\n\n";
 
     ob_flush();
     flush();
 }
 
-/*
-while (true) {
-    push("https://pbs.twimg.com/profile_images/783226143134539776/oTd9F7qd_bigger.jpg", "OZtter<br><br>push test");
 
-    usleep(10000);
+while (true) {
+    push("Info", "info.png", "OZtter<br><br>push test");
+
+    usleep(1000000);
 }
-*/
+
 ?>
