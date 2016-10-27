@@ -8,7 +8,6 @@
 $Twitter['ck'] = ''; // API Key
 $Twitter['cs'] = ''; // API Secret
 ?>
-
 ```
 
 ## License
