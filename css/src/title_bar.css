@@ -1,0 +1,58 @@
+.title_bar{
+    height: 19px;
+    width: 100%;
+    background-color: #5180b3;
+}
+
+.close {
+    display: inline-block;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+
+    position: relative;
+    margin-top: 1px;
+    margin-left: 280px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+}
+
+.cross {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -7px;
+    background: transparent;
+}
+
+.close:hover > .cross:before, .close:hover > .cross:after {
+    background-color: #d7d7d7;
+}
+
+.cross:before, .cross:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 17px;
+    height: 2px;
+    background: #ffffff;
+
+    border-radius: 1px;
+}
+
+.cross:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.cross:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
