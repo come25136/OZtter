@@ -1,10 +1,11 @@
 .title_bar{
     height: 16px;
     width: 98%;
-    padding-top: 3px;
+    padding-top: 2px;
     padding-left: 6px;
     background-color: #5180b3;
     color: #ffffff;
+    font-family: メイリオ;
     font-size: 5px;
     overflow: hidden;
 }
