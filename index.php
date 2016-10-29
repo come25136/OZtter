@@ -18,10 +18,15 @@ if (isset($_GET['limit']) && $_GET['limit'] && ctype_digit(strval($_GET['limit']
     <meta charset="utf-8">
     <title>OZtter</title>
 
+    <link href="css/lib/jquery-ui.min.css">
+    <link href="css/lib/jquery-ui.structure.min.css">
+
     <link href="css/src/get_tweet.css" rel="stylesheet" type="text/css">
     <link href="css/title_bar.min.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/lib/jquery-ui.min.js"></script>
+
     <script src="js/get_tweet.min.js"></script>
     <script src="js/title_bar.js"></script>
     <?php #include_once("lib/analyticstracking.php"); ?>
