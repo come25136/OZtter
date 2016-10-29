@@ -1,0 +1,64 @@
+.title_bar{
+    height: 16px;
+    width: 98%;
+    padding-top: 2px;
+    padding-left: 6px;
+    background-color: #5180b3;
+    color: #ffffff;
+    font-family: メイリオ;
+    font-size: 5px;
+    overflow: hidden;
+}
+
+.close {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 1px;
+    margin-left: 93%;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+}
+
+.cross {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -7px;
+    background: transparent;
+}
+
+.close:hover > .cross:before, .close:hover > .cross:after {
+    background-color: #d7d7d7;
+}
+
+.cross:before, .cross:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 17px;
+    height: 2px;
+    background: #ffffff;
+
+    border-radius: 1px;
+}
+
+.cross:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.cross:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

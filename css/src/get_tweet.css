@@ -4,9 +4,9 @@ body {
 
 .tweet {
     position: absolute;
-    height: 84px;
+    height: 104px;
     width: 0px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 1px #ccc solid;
     box-shadow: 0 2px 3px 0 #ddd;
     -moz-box-shadow: 0 2px 3px 0 #ddd;
@@ -27,8 +27,9 @@ body {
     width: 0px;
     height: 72px;
     overflow: hidden;
-    text-overflow: ellipsis;
     animation: Value_Animation 0.06s linear 0s forwards;
+    font-family: メイリオ;
+    font-size: 12px;
 }
 
 @keyframes Tweet_Animation {
@@ -55,4 +56,17 @@ body {
         margin-left: 74px;
         width: 69%;
     }
+}
+
+.tweet:hover .value {
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #BBBBBB;
 }

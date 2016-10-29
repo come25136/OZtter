@@ -26,8 +26,8 @@ try {
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="css/lib/oztter_gwd.css" rel="stylesheet" type="text/css" id="gwd-text-style">
 
-    <link href="css/progress.css" rel="stylesheet" type="text/css">
-    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="css/progress.min.css" rel="stylesheet" type="text/css">
+    <link href="css/login.min.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script data-source="js/lib/googbase_min.js" data-version="3" data-exports-type="googbase"
@@ -41,7 +41,7 @@ try {
     <script data-source="js/lib/gwdrectangle_min.js" data-version="3" data-exports-type="gwd-rectangle"
             src="js/lib/gwdrectangle_min.js"></script>
 
-    <script src="js/progress.js"></script>
+    <script src="js/progress.min.js"></script>
     <?php include_once("lib/analyticstracking.php"); ?>
 </head>
 

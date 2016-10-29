@@ -50,5 +50,11 @@ Temporary Items
 vendor/
 lib/analyticstracking.php
 api-keys.php
-/index.php
-/.gitignore
+
+favicon.ico
+favicon-*.png
+android-chrome-*.png
+apple-touch-*.png
+browserconfig.xml
+mstile-*.png
+manifest.json
