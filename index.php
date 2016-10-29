@@ -28,7 +28,7 @@ if (isset($_GET['limit']) && $_GET['limit'] && ctype_digit(strval($_GET['limit']
     <script src="js/lib/jquery-ui.min.js"></script>
 
     <script src="js/get_tweet.min.js"></script>
-    <script src="js/title_bar.js"></script>
+    <script src="js/title_bar.min.js"></script>
     <?php #include_once("lib/analyticstracking.php"); ?>
     <script>
         main("<?php echo $_SESSION['client']->token; ?>", "<?php echo $_SESSION['client']->token_secret; ?>", "<?php echo $limit; ?>");
