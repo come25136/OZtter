@@ -1,5 +1,3 @@
-var z_count = 0;
-
 $(document).on('mousedown', '.tweet', function () {
     $('#' + $(this).attr('id')).css('z-index', ++z_count);
 });

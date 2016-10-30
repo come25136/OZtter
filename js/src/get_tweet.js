@@ -46,13 +46,14 @@ function Init(limit, data) {
     return validateJSON(data.data);
 }
 
+var z_count = 0;
 var w_size = 48;
 
 function add_tweet(id, icon_url, value) {
     var wh = window.innerHeight - 104;
     var ww = window.innerWidth - 300;
 
-    $(TweetDisplay).append('<div class="tweet" id="' + id + '" style="top:' + calculation(wh / 100 * w_size, wh, 104) + 'px; left:' + calculation(ww / 100 * w_size, ww, 300) + 'px;">'
+    $(TweetDisplay).append('<div class="tweet" id="' + id + '" style="top:' + calculation(wh / 100 * w_size, wh, 104) + 'px; left:' + calculation(ww / 100 * w_size, ww, 300) + 'px; z-index:' + z_count + ';">'
         + '<div class="title_bar">'
         + 'OZtter Message'
         + '<button class="close" title="閉じる">'
