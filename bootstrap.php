@@ -4,6 +4,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 // Start session
+session_name("ps"); // PHPSESSIONの略
 session_start();
 
 // You MUST apply this function when you show raw text in HTML contexts.
